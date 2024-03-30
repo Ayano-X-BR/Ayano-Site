@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+/*Cabecalho menu*/
+
+.cabecalho-menu {
+    width: 100%;
+    min-height: 80px;
+    background-color: #6B7187;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.div-cabecalho-img {
+    width: 50px;
+    height: 50px;
+}
+
+.div-cabecalho-img-img {
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+}
+
+.nav-liste-menu {
+    position: absolute;
+    right: 0;
+    width: 50%;
+    min-height: 80px;
+    max-height: 80px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.liste-menu {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.liste-item-menu > a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.menu-botao {
+    display: none;
+}
+
+.nav-liste-men-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 490px) {
+    .Desktop {
+        display: none;
+    }
+
+    .menu-botao {
+        display: block;
+        position: absolute;
+        right: 0;
+        margin-right: 3px;
+        background: none;
+        border: none;
+        width: 60px;
+        height: 60px;
+    }
+
+    .menu-img-botao {
+        width: inherit;
+        height: inherit;
+    }
+
+    .nav-liste-men-mobile {
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background-color: rgba(0, 255, 255, 0.267);
+    }
+
+    .liste-item-menu > a {
+        display: block;
+        text-decoration: none;
+        color: black;
+        background-color: #FFFFFF;
+        padding: 20px;
+        border-radius: inherit;
+        font-weight: bold;
+    }
+
+    .off {
+        display: none;
+    }
+
+    .ativo{
+        display: block;
+    }
+}
